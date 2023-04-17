@@ -1,0 +1,101 @@
+/* Feel free to edit CSS of body if you'd like. We provide you the light gray background color and font family in the body styling */
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  background-color: #e6ecf0;
+}
+
+/* TODO: Create CSS for your Twitter Mockup */
+nav {
+  background-color: grey;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+
+  display: flex;
+  margin: 5px
+}
+
+nav li{
+  margin: 5px;
+}
+
+nav img {
+  position: fixed;
+  left: 50%;
+  height: 25px;
+  padding: 10px;
+}
+
+#wrapper {
+  background-color: lightgrey;
+  display: flex;
+  margin-top: 100px;
+}
+
+#banner {
+  background-color:black;
+  display: flex;
+  height: 50%;
+  width: 100%;
+}
+
+#tweet {
+  height: 50px;
+  width: 100%;
+  border: 1px solid lightgrey;
+}
+
+#tweet1 {
+  margin: 5px;
+  height: 50px;
+  width: 100%;
+}
+
+#tweet2 {
+  margin: 10px;
+  height: 50px;
+  width: 95%;
+}
+
+#tweet3 {
+  margin: 10px;
+  height: 50px;
+  width: 95%;
+}
+
+#tweet4 {
+  margin: 10px;
+  height: 50px;
+  width: 95%;
+}
+
+#content-left {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  background-color: whitesmoke;
+}
+
+#content-center {
+  height: 600px;
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 10px;
+}
+
+#content-right {
+  height: 200px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+@media (max-width: 1200px) {
+  #content-right {
+    display: none;
+  }
+}
