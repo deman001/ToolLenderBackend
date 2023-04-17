@@ -7,18 +7,23 @@ body {
 
 /* TODO: Create CSS for your Twitter Mockup */
 nav {
-  background-color: grey;
   height: 50px;
   width: 100%;
   position: fixed;
-  top: 0%;
-
+  top: 0;
+  background-color:#f8f9fa!important;
   display: flex;
   margin: 5px
 }
 
 nav li{
   margin: 5px;
+  list-style-type: none;
+  padding-right: 1.1rem;
+  padding-left: 1.1rem;
+  font-weight: bold;
+  padding-bottom: 15px;
+  color: gray;
 }
 
 nav img {
@@ -28,17 +33,38 @@ nav img {
   padding: 10px;
 }
 
+nav li:hover {
+  color: #4ab3f4 !important;
+  border-bottom: 2px solid #4ab3f4 !important;
+}
+
+nav #header {
+  margin-left: 20px;
+}
+
 #wrapper {
   background-color: lightgrey;
   display: flex;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 #banner {
-  background-color:black;
+  width: 100%; /* adjust width as needed */
+  position: absolute;
+  background-color: black;
+  min-height: 100px;
+  max-height: 100px;
   display: flex;
-  height: 50%;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1;
+}
+
+#banner img {
+  width: 200px;
+  margin-left: 45px;
+  margin-right: 45px;
+  border-radius: initial;
 }
 
 #tweet {
@@ -72,10 +98,26 @@ nav img {
 }
 
 #content-left {
-  height: 200px;
-  width: 100%;
+  max-width: 290px;
+  max-height: 270px;
+  margin-right: 10px;
+  align-items: center;
   display: flex;
-  background-color: whitesmoke;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f8f9fa!important;
+  position: relative;
+}
+
+#Profile img {
+  z-index: 3;
+  max-height: 80px;
+  margin-top: 75px;
+  border-radius: 50%;
+  margin-right: 175px;
+  order: -1;
+  position: relative;
+  border: 1px;
 }
 
 #content-center {
@@ -86,12 +128,16 @@ nav img {
   flex-direction: column;
   margin: 5px;
   padding: 10px;
+  background-color: #f8f9fa!important;
 }
 
 #content-right {
-  height: 200px;
-  width: 100%;
-  background-color: whitesmoke;
+  max-width: 290px;
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-height: 270px;
+  background-color: #f8f9fa!important;
 }
 
 @media (max-width: 1200px) {
